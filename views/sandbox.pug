@@ -1,0 +1,9 @@
+extends layout.pug
+block content
+  section#content
+    h2 Build a two column table with your friends' first and last names
+    table
+      each friend in friends
+        tr
+          td= friend.firstName
+          td= friend.lastName

@@ -1,0 +1,12 @@
+extends layout.pug
+block content
+  section#content
+    h2= prompt
+    if hint
+      p
+        i Hint: #{hint}
+    ul
+      each color in colors
+        li= color
+
+
